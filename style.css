@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,900&display=swap");
+@import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,900&display=swap);
 
 body {
     margin: 0;
@@ -817,4 +817,68 @@ body {
         height: 10px;
         margin-left: 11px;
     }
+}
+
+.slider {
+    min-height: 624px;
+    border: 1px solid #EAEAEA;
+    background: #F7F7F7;
+    position: relative;
+}
+
+@media (min-width: 1600px) {
+    .slider {
+        min-height: 777px;
+    }
+}
+
+.slider .sliderImage {
+    max-width: 100%;
+    object-fit: cover;
+    margin-top: 85px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .slider .sliderImage {
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .slider .sliderImage {
+        margin-top: 11px;
+    }
+}
+
+.slider .sliderLeftArrow,
+.slider .sliderRightArrow {
+    width: 47px;
+    height: 47px;
+    background-color: rgba(42, 42, 42, 0.15);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: calc(50% - 47px / 2);
+    cursor: pointer;
+}
+
+.slider .sliderLeftArrow {
+    left: 0;
+    background-image: url(galochka-2.png);
+}
+
+.slider .sliderLeftArrow:hover {
+    background-image: url(galochka-2.png);
+}
+
+.slider .sliderRightArrow {
+    right: 0;
+    background-image: url(galochka.png);
+}
+
+.slider .sliderRightArrow:hover {
+    background-image: url(galochka.png);
 }
